@@ -1,0 +1,33 @@
+form {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.35rem;
+}
+
+label {
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.65rem 0.75rem;
+    font: inherit;
+    background: #ffffff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #f9a8d4;
+    outline-offset: 0;
+    border-color: #f9a8d4;
+}

@@ -1,0 +1,252 @@
+.navbar {
+    min-height: 74px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.navbar-menu {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.logo-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.navbar-burger {
+    display: none;
+}
+
+.burger-image {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+    transform-origin: center;
+}
+
+.navbar-burger:focus-visible {
+    outline: 2px solid #f9a8d4;
+    outline-offset: 2px;
+}
+
+.navbar.menu-open .burger-image {
+    transform: rotate(90deg);
+}
+
+.navbar-center {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-center a {
+    padding: 0.45rem 0.6rem;
+    border-radius: 6px;
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.auth-redirect-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.nav-login-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.navbar-center a.active,
+.navbar-center a:hover {
+    color: var(--text);
+    background: #f3f4f6;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-icon-link {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 42px;
+}
+
+.nav-icon-link:hover,
+.nav-icon-link.active {
+    background: #f3f4f6;
+}
+
+.nav-icon-link img {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+}
+
+.wallet-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 34px;
+    padding: 0.25rem 0.55rem;
+    border: 1px solid #fde68a;
+    border-radius: 999px;
+    background: #fffbeb;
+    color: #78350f;
+    font-family: inherit;
+    font-size: 0.92rem;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    appearance: none;
+}
+
+.wallet-chip:hover {
+    background: #fef3c7;
+}
+
+.wallet-chip:focus-visible {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+.wallet-alert-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.fish-alert-label {
+    position: absolute;
+    top: calc(100% + 0.65rem);
+    right: 0;
+    z-index: 20;
+    width: min(320px, calc(100vw - 2rem));
+    padding: 0.75rem 0.9rem;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    background: #fffbeb;
+    color: #78350f;
+    box-shadow: 0 16px 30px rgba(17, 24, 39, 0.16);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.35;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-4px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.fish-alert-label.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.token-icon {
+    width: 30px !important;
+    height: 30px !important;
+    object-fit: contain;
+    flex: 0 0 12px;
+}
+
+.user-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.55rem;
+    border-radius: 999px;
+    background: #f3f4f6;
+    min-height: 44px;
+}
+
+.user-avatar {
+    width: 36px !important;
+    min-width: 36px;
+    max-width: 36px;
+    height: 36px !important;
+    min-height: 36px;
+    max-height: 36px;
+    flex: 0 0 36px;
+    aspect-ratio: 1 / 1;
+    border-radius: 999px;
+    background: #e5e7eb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.user-avatar-photo {
+    color: transparent;
+}
+
+.user-avatar-image {
+    display: block;
+    width: 36px !important;
+    min-width: 36px;
+    max-width: 36px;
+    height: 36px !important;
+    min-height: 36px;
+    max-height: 36px;
+    aspect-ratio: 1 / 1;
+    border-radius: 999px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.user-name {
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

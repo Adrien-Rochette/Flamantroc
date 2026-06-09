@@ -1,0 +1,120 @@
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.page-main {
+    padding: 1.4rem 0 2.4rem;
+    min-height: calc(100vh - 120px);
+}
+
+.page-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.page-content {
+    display: block;
+}
+
+.footer {
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    padding: 1.6rem 0 1rem;
+}
+
+.footer p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(150px, 0.6fr));
+    gap: 1.6rem;
+    align-items: start;
+}
+
+.footer-brand {
+    max-width: 420px;
+}
+
+.footer-brand strong {
+    display: inline-block;
+    margin-bottom: 0.45rem;
+    font-size: 1.05rem;
+}
+
+.footer-section {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.footer-section h2 {
+    font-size: 0.92rem;
+    margin-bottom: 0.1rem;
+}
+
+.footer-section a {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+    color: var(--text);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.legal-page {
+    display: grid;
+    gap: 1rem;
+    max-width: 860px;
+}
+
+.legal-block {
+    padding: 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+}
+
+.legal-block h2 {
+    margin-bottom: 0.55rem;
+    font-size: 1.15rem;
+}
+
+.legal-block p {
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.legal-block p + p {
+    margin-top: 0.75rem;
+}
+
+@media (max-width: 760px) {
+    .footer-grid,
+    .footer-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        gap: 1.2rem;
+    }
+
+    .footer-bottom {
+        display: grid;
+    }
+}

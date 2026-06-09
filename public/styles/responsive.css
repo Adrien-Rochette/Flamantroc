@@ -1,0 +1,216 @@
+@media (max-width: 1024px) {
+    .navbar {
+        grid-template-columns: 1fr auto;
+        gap: 0.6rem;
+        padding: 0.8rem 0;
+    }
+
+    .navbar-left {
+        justify-self: start;
+    }
+
+    .navbar-burger {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #ffffff;
+        cursor: pointer;
+    }
+
+    .navbar-menu {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+        transform: translateY(-6px);
+        padding-bottom: 0;
+        transition: max-height 1.35s ease, opacity 1.22s ease, transform 1.22s ease, padding-bottom 1.22s ease;
+    }
+
+    .navbar.menu-open .navbar-menu {
+        max-height: 520px;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+        padding-bottom: 0.8rem;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 0.4rem;
+    }
+
+    .navbar-center a {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-center .auth-redirect-link {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .navbar-right {
+        justify-self: start;
+        flex-wrap: wrap;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-filter-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .offer-filter-actions {
+        grid-column: 1 / -1;
+        justify-content: flex-end;
+    }
+
+    .offers-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .offer-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .messages-layout {
+        grid-template-columns: 300px minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: min(1200px, 100% - 1.2rem);
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .navbar-right .btn {
+        width: 100%;
+    }
+
+    .wallet-alert-wrap {
+        width: 100%;
+    }
+
+    .wallet-chip {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .admin-user-row {
+        grid-template-columns: 30px minmax(0, 1fr);
+    }
+
+    .admin-user-meta {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+        padding-left: 45px;
+    }
+
+    .admin-ban-actions {
+        grid-column: 1 / -1;
+    }
+
+    .admin-ban-form {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-filters-header,
+    .offer-filter-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .offer-filter-form {
+        grid-template-columns: 1fr;
+    }
+
+    .offer-filter-actions {
+        grid-column: auto;
+    }
+
+    .offer-filter-actions .btn {
+        width: 100%;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-offer {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-fields-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-offer-image {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+    }
+
+    .profile-offer-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .profile-offer-actions form,
+    .profile-offer-actions .btn {
+        width: 100%;
+    }
+
+    .offer-detail-media,
+    .offer-detail-media img {
+        min-height: 260px;
+    }
+
+    .offer-detail-heading {
+        flex-direction: column;
+    }
+
+    .messages-layout {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .conversation-list {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+        max-height: 320px;
+        overflow-y: auto;
+    }
+
+    .chat-panel {
+        min-height: 520px;
+    }
+
+    .message-compose {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
