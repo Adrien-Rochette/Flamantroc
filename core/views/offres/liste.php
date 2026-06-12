@@ -56,6 +56,16 @@ $currentOffresPath = '/offres' . ($redirectParameters !== [] ? '?' . http_build_
         </span>
     </div>
 
+    <div class="form-group offer-search">
+        <label for="offer-search">Recherche</label>
+        <input
+            id="offer-search"
+            type="search"
+            placeholder="Rechercher une offre..."
+            autocomplete="off"
+        >
+    </div>
+
     <form class="offer-filter-form" method="get" action="<?= htmlspecialchars(url('/offres'), ENT_QUOTES, 'UTF-8') ?>">
         <div class="form-group">
             <label for="filter-vendeur">Lettre du vendeur</label>
