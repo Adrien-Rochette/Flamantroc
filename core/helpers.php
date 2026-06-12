@@ -24,7 +24,6 @@ if (!function_exists('isActiveRoute')) {
     function isActiveRoute(string $path): bool
     {
         $uriPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-        $normalizedUri = '/' . trim($uriPath, '/');
         $normalizedUri = $normalizedUri === '/' ? '/' : rtrim($normalizedUri, '/');
 
         $basePath = BASE_URL === '' ? '' : BASE_URL;
