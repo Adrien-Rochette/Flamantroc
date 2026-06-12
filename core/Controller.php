@@ -13,7 +13,7 @@ abstract class Controller
         }
 
         $pageTitle = $data['pageTitle'] ?? 'Flamantroc';
-        $contentView = $viewPath;
+        
         extract($data, EXTR_SKIP);
 
         require PROJECT_ROOT . '/core/views/partials/layout.php';
