@@ -422,17 +422,17 @@ http://localhost/projet-troc/
 
 ## État d’avancement
 
-- [ ] Création du MCD
-- [ ] Traduction du MCD en MLD
-- [ ] Création du script MySQL
-- [ ] Insertion des premières données
-- [ ] Création des pages principales
-- [ ] Gestion des utilisateurs
-- [ ] Gestion des objets
-- [ ] Gestion des catégories
-- [ ] Gestion des propositions
-- [ ] Tests des requêtes SQL
-- [ ] Finalisation du rendu
+- [x] Création du MCD
+- [x] Traduction du MCD en MLD
+- [x] Création du script MySQL
+- [x] Insertion des premières données
+- [x] Création des pages principales
+- [x] Gestion des utilisateurs
+- [x] Gestion des objets
+- [x] Gestion des catégories
+- [x] Gestion des propositions
+- [x] Tests des requêtes SQL
+- [x] Finalisation du rendu
 
 ---
 
@@ -443,9 +443,9 @@ Projet réalisé dans le cadre du projet TROC.
 Membres du groupe :
 
 - Adrien Rochette
-- À compléter
-- À compléter
-- À compléter
+- Semrik Neu
+- Hugo Bordas
+- Leny Jeannetau
 
 ---
 
